@@ -84,7 +84,7 @@ nav {
     width: 100%;
     /* debug */
     border: 1px solid black;       
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 .card {
@@ -149,7 +149,7 @@ nav {
 
 /* MEDIA QUERY STRATEGIC SECTION (DESKTOP) */
 @media screen and (min-width: 992px) {
-    .flex-container-purple {
+    .flex-container {
         display: flex;
         align-items: flex-end;
         width: 70%;
@@ -215,7 +215,7 @@ nav {
     width: 100%;
     /* debug */
     min-height: 200px;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .card-benefits {
@@ -249,4 +249,83 @@ nav {
     .col-benefits {
         width: calc(100% / 3);
     }
+}
+
+
+/* ABOUT SECTION */
+.about-text {
+    width: 100%;
+    padding: 20px;
+    /* debug */
+    min-height: 600px;
+    border: 1px solid black;
+}
+
+.icon {
+    width: 100%;
+    /* debug */
+    min-height: 200px;
+    border: 1px solid black;
+}
+
+/* MEDIA QUERY ABOUT SECTION (TABLET) */
+@media screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+
+/* CTA SECTION */
+.section-color {
+        background-color: rgb(187, 109, 255);
+}
+
+.container-cta {
+    width: 100%;
+    /* debug */
+    min-height: 200px;
+}
+
+/* MEDIA QUERY CTA SECTION (TABLET) */
+@media screen and (min-width: 768px) {
+    .container-cta {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* MEDIA QUERY CTA SECTION (DESKTOP) */
+@media screen and (min-width: 7992px) {
+    .container-cta {
+        width: 50%;
+    }
+}
+
+
+/* FOOTER SECTION */
+.footer-color {
+    background-color: rgb(0, 0, 0);
+}
+
+.container-footer {
+width: 100%;
+/* debug */
+min-height: 200px;
+}
+
+/* MEDIA QUERY FOOTER SECTION (TABLET) */
+@media screen and (min-width: 768px) {
+.container-footer {
+    width: 80%;
+    margin: 0 auto;
+}
+}
+
+/* MEDIA QUERY FOOTER SECTION (DESKTOP) */
+@media screen and (min-width: 7992px) {
+.container-footer {
+    width: 40%;
+}
 }
