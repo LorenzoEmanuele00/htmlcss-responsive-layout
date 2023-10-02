@@ -16,12 +16,11 @@ header {
     background-color: rgb(0, 153, 255);
     color: white;
     /* debug */
-    min-height: 50px;
     padding: 15px;
 }
 
 nav {
-    height: 50px;
+    height: 30px;
 }
 
 .nav-flex {
@@ -69,3 +68,45 @@ nav {
     }
 }
 
+
+/* MAIN */
+/* DEMO SECTION */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    /* debug */
+    min-height: 800px;
+    background-color: beige;
+}
+
+.col {
+    width: 100%;
+    /* debug */
+    background-color: blueviolet;        
+    padding: 10px;
+}
+
+.card {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(85, 212, 255);
+    /* debug */
+    min-height: 200px;
+}
+
+/* MEDAI QUERY DEMO SECTION (TABLET) */
+@media screen and (min-width: 768px) {
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: calc(100% / 3);
+    }
+
+    .big {
+        width: calc(100% / 1.5);
+    }
+}
