@@ -13,8 +13,8 @@ img {
 /* COMMON */
 .container {
     width: 100%;
-    margin: auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 20px 20px;
     /* debug */
     background-color: beige;
 }
@@ -153,7 +153,7 @@ nav {
         display: flex;
         align-items: flex-end;
         width: 70%;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .strat-col {
@@ -175,7 +175,7 @@ nav {
     padding: 10px 0;
 }
 
-.testi-img {
+.testi {
     width: 100%;
     padding: 10px;
     /* debug */
@@ -184,13 +184,6 @@ nav {
     border-bottom: 1px dashed black;
 }
 
-.testi-txt {
-    width: 100%;
-    padding: 10px;
-    /* debug */
-    min-height: 100px;
-    background-color: rgb(187, 109, 255);
-}
 
 /* MEDIA QUERY TESTIMONIAL SECTION (TABLET) */
 @media screen and (min-width: 768px) {
@@ -198,12 +191,62 @@ nav {
         display: flex;
     }
 
-    .testi-img {
+    .testi {
         width: calc(100% / 2);
         border-right: 1px dashed black;
     }
 
-    .testi-txt {
+}
+
+
+/* BENEFITS SECTION */
+.back-color {
+    background-color: rgb(187, 109, 255);
+    padding: 0 20px;
+}
+
+.benefits-text {
+    width: 100%;
+    /* debug */
+    min-height: 30px;
+}
+
+.col-benefits {
+    width: 100%;
+    /* debug */
+    min-height: 200px;
+    padding: 10px 20px;
+}
+
+.card-benefits {
+    background-color: white;
+    min-height: 200px;
+}
+
+/* MEDIA QUERY BENEFITS SECTION (TABLET) */
+@media screen and  (min-width:768px) {
+    .flex-benefits {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-benefits {
         width: calc(100% / 2);
+    }
+}
+
+/* MEDIA QUERY BENEFITS SECTION (DESKTOP) */
+@media screen and  (min-width:992px) {
+    .benefits-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .flex-benefits {
+        display: flex;
+    }
+
+    .col-benefits {
+        width: calc(100% / 3);
     }
 }
