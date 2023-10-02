@@ -10,6 +10,15 @@ img {
 }
 
 
+/* COMMON */
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    /* debug */
+    background-color: beige;
+}
+
 
 /* HEADER */
 header {
@@ -71,19 +80,11 @@ nav {
 
 /* MAIN */
 /* DEMO SECTION */
-.container {
-    width: 100%;
-    margin: auto;
-    padding: 20px 0;
-    /* debug */
-    background-color: beige;
-}
-
 .col {
     width: 100%;
     /* debug */
     border: 1px solid black;       
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .card {
@@ -122,7 +123,7 @@ nav {
 /* SECTION STRATEGIC */
 .sec-purple {
     background-color: rgb(187, 109, 255);
-    padding: 50px 10px;
+    padding: 50px 20px;
 }
 
 .strat-img {
@@ -158,4 +159,51 @@ nav {
     .strat-col {
         width: calc(100% / 2);
     }    
+}
+
+
+/* TESTIMONIAL SECTION */
+.testimonial-header {
+    /* debug */
+    width: 100%;
+    min-height: 50px;
+}
+
+.flex-testimonial {
+    /* debug */
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+.testi-img {
+    width: 100%;
+    padding: 10px;
+    /* debug */
+    min-height: 100px;
+    background-color: rgb(187, 109, 255);
+    border-bottom: 1px dashed black;
+}
+
+.testi-txt {
+    width: 100%;
+    padding: 10px;
+    /* debug */
+    min-height: 100px;
+    background-color: rgb(187, 109, 255);
+}
+
+/* MEDIA QUERY TESTIMONIAL SECTION (TABLET) */
+@media screen and (min-width: 768px) {
+    .flex-testimonial {
+        display: flex;
+    }
+
+    .testi-img {
+        width: calc(100% / 2);
+        border-right: 1px dashed black;
+    }
+
+    .testi-txt {
+        width: calc(100% / 2);
+    }
 }
