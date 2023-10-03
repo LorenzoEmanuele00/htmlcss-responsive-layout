@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -12,61 +16,87 @@
     <!-- HEADER -->
     <header> 
         <nav class="nav-flex">
-            <div>LOGO</div>
-            <div class="menu-button">MENU</div>
+            <div><img src="img/logo.png" alt="logo"></div>
+            <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
             <div class="menu">
                 <ul class="nav-flex">
-                    <li><a href="" class="links">link</a></li>
-                    <li><a href="" class="links">link</a></li>
-                    <li><a href="" class="links">link</a></li>
-                    <li><a href="" class="links">link</a></li>
-                    <li><a href="" class="white-button">link</a></li>
+                    <li><a href="#strategic" class="links">Planning</a></li>
+                    <li><a href="#testimonial" class="links">Testimonials</a></li>
+                    <li><a href="#features" class="links">Features</a></li>
+                    <li><a href="#about" class="links">About Us</a></li>
+                    <li><a href="#cta" class="button white-button">Get Started</a></li>
                 </ul>
             </div>
-            
         </nav>
     </header>
-    <!-- HEADER -->
+    <!-- /HEADER -->
 
     <!-- MAIN -->
     <main>
         <!-- SECTION DEMO -->
-        <section class="container">
+        <section class="header-space-padding container">
             <div class="flex-row">
-                <div class="col big">
-                    <div class="card">
-                        <div></div><!-- image -->
-                        <div></div><!-- text -->
-                    </div> 
+                <div class="col flex-big big">
+                    <div class="card flex-card">
+                        <div>
+                            <h3>Get a demo application</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto consectetur, aliquam dolor in facere eligendi laudantium alias obcaecati optio doloribus ea esse.</p>
+                            <div class="space-down-button">
+                                <a class="button blue-b" href=""><i class="space fa-brands fa-apple"></i>App Store</a>
+                            </div>
+                        </div>
+                        <div class="div-phone">
+                            <img class="phone" src="img/phone.png" alt="IPhone">
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <div class="card"></div>
+                <div class="col flex-small">
+                    <div class="card small">
+                        <div class="prog-ico-space"><i class="fa-solid fa-file-code prog-ico"></i></div>
+                        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis eos repellendus voluptas officiis ipsa? Modi, iure suscipit nisi sint voluptatem accusantium sit nam culpa facilis repellendus at tenetur eligendi.</p></div>
+                    </div>
                 </div>
-                <div class="col">
-                    <div class="card"></div>
+                <div class="col flex-small">
+                    <div class="card small">
+                        <div class="prog-ico-space"><i class="fa-solid fa-compass-drafting prog-ico"></i></div>
+                        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis eos repellendus voluptas officiis ipsa? Modi, iure suscipit nisi sint voluptatem accusantium sit nam culpa facilis repellendus at tenetur eligendi.</p></div>
+                    </div>
                 </div>
-                <div class="col">
-                    <div class="card"></div>
+                <div class="col flex-small">
+                    <div class="card small">
+                        <div class="prog-ico-space"><i class="fa-solid fa-laptop-code prog-ico"></i></div>
+                        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis eos repellendus voluptas officiis ipsa? Modi, iure suscipit nisi sint voluptatem accusantium sit nam culpa facilis repellendus at tenetur eligendi.</p></div>
+                    </div>
                 </div>
-                <div class="col">
-                    <div class="card"></div>
+                <div class="col flex-small">
+                    <div class="card small">
+                        <div class="prog-ico-space"><i class="fa-solid fa-bullhorn prog-ico"></i></div>
+                        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis eos repellendus voluptas officiis ipsa? Modi, iure suscipit nisi sint voluptatem accusantium sit nam culpa facilis repellendus at tenetur eligendi.</p></div>
+                    </div>
                 </div>
             </div>
         </section>
         
         <!-- SECTION STRATEGIC -->
-        <section class="sec-purple">
+        <section id="strategic" class="sec-purple">
             <div class="flex-container"> 
                 <div class="strat-col">
-                    <div class="strat-img"></div>
-                    <div class="strat-txt"></div>
+                    <div class="strat-img">
+                        <img src="img/planning1.png" alt="woman thinking">
+                    </div>
+                    <div class="strat-txt">
+                        <h2>Strategic Planning</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro fuga nobis voluptates vel veritatis maiores recusandae assumenda amet eum atque repellendus officiis sed illo, labore asperiores similique commodi numquam aliquam!</p>
+                    </div>
                 </div>
-                <div class="strat-col white-card"></div>
+                <div class="strat-col white-card">
+                    
+                </div>
             </div>
         </section>
 
         <!-- TESTIMONIAL SECTION -->
-        <section>
+        <section id="testimonial">
             <div class="container">
                 <div class="testimonial-header"> <!-- text -->
                 </div>
@@ -86,7 +116,7 @@
         </section>
 
         <!-- BENEFITS SECTION -->
-        <section class="back-color">
+        <section id="features" class="back-color">
             <div class="benefits-container">
                 <div class="benefits-text"></div>
                 <div class="flex-benefits">
@@ -119,7 +149,7 @@
         </section>
 
         <!-- SECTION ABOUT -->
-        <section>
+        <section id="about">
             <div class="flex-container">
                 <div class="about-text"></div>
                 <div class="icon">
@@ -130,18 +160,20 @@
         </section>
 
         <!-- CTA SECTION -->
-        <section class="section-color">
+        <section id="cta" class="cta-color">
             <div class="container-cta"></div>
         </section>
-
-        <!-- FOOTER SECTION -->
-        <footer class="footer-color">
-            <div class="container-footer">
-                <div></div>
-                <div></div>
-            </div>
-        </footer>
     </main>
+    <!-- /MAIN -->
+
+    <!-- FOOTER  -->
+    <footer class="footer-color">
+        <div class="container-footer">
+            <div></div>
+            <div></div>
+        </div>
+    </footer>
+    <!-- /FOOOTER -->
 
 </body>
 
