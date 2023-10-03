@@ -37,6 +37,10 @@ img {
     padding-right: 10px;
 }
 
+.space-left {
+    padding-left: 10px;
+}
+
 
 /* HEADER */
 header {
@@ -322,6 +326,10 @@ nav {
     object-fit: cover;
 }
 
+.quote {
+    color: white;
+}
+
 .quote h3 {
     padding-top: 20px;
 }
@@ -353,32 +361,65 @@ nav {
 
 /* BENEFITS SECTION */
 .back-color {
-    background-color: rgb(187, 109, 255);
+    background-color:var(--purple);
     padding: 0 20px;
 }
 
 .benefits-text {
     width: 100%;
-    /* debug */
-    min-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+.flex-benefits {
+    display: flex;
+    flex-direction: column;
 }
 
 .col-benefits {
     width: 100%;
-    /* debug */
-    min-height: 200px;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .card-benefits {
     background-color: white;
-    min-height: 200px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.card-benefits h2,
+.card-benefits h3,
+.card-benefits p {
+    padding-bottom: 20px;
+}
+
+.card-benefits h2,
+.card-benefits h3 {
+    color: var(--purple);
+}
+
+.card-benefits h2 {
+    font-size: 3rem;
+}
+
+.card-benefits h3 {
+    font-size: 1.7rem;
+}
+
+.purple-button {
+    background-color: var(--purple);
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* MEDIA QUERY BENEFITS SECTION (TABLET) */
 @media screen and  (min-width:768px) {
     .flex-benefits {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
@@ -400,6 +441,10 @@ nav {
 
     .col-benefits {
         width: calc(100% / 3);
+    }
+
+    .card-benefits h3 {
+        font-size: 1.5rem;
     }
 }
 
